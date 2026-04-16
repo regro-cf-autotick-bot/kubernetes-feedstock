@@ -46,8 +46,7 @@ outputs:
     requirements:
       build:
         - {{ stdlib("c") }}  # [unix]
-        - {{ compiler('cgo') }}  # [unix and not osx]
-        - {{ compiler('cgo') }} <1.25  # [osx]
+        - {{ compiler('cgo') }}  # [unix]
         - {{ compiler('c') }}  # [unix]
         - bash >=4.2  # [unix]
         - make  # [unix]
@@ -69,8 +68,7 @@ outputs:
     requirements:
       build:
         - {{ stdlib("c") }}  # [unix]
-        - {{ compiler('cgo') }}  # [unix and not osx]
-        - {{ compiler('cgo') }} <1.25  # [osx]
+        - {{ compiler('cgo') }}  # [unix]
         - {{ compiler('c') }}  # [unix]
         - bash >=4.2  # [unix]
         - make  # [unix]
@@ -91,8 +89,7 @@ outputs:
     requirements:
       build:
         - {{ stdlib("c") }}
-        - {{ compiler('cgo') }}  # [unix and not osx]
-        - {{ compiler('cgo') }} <1.25  # [osx]
+        - {{ compiler('cgo') }}  # [unix]
         - {{ compiler('c') }}
         - bash >=4.2
         - make
